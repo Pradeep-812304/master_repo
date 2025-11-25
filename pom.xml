@@ -54,19 +54,17 @@
     </dependencies>
 
          </dependencies>
-
-<!-- Paste here -->
-<distributionManagement>
-    <repository>
-        <id>libs-release-local</id>
-        <url>http://192.168.91.146:8081/artifactory/libs-release-local</url>
-    </repository>
-
-    <snapshotRepository>
-        <id>libs-snapshot-local</id>
-        <url>http://192.168.91.146:8081/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
-</distributionManagement>
-
 </project>
+ <distributionManagement>
+        <repository>
+            <id>libs-release-local</id>
+            <url>http://192.168.91.146:8081/artifactory/libs-release-local</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>libs-snapshot-local</id>
+            <url>http://192.168.91.146:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>
