@@ -1,13 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
     <artifactId>StudentManagementApp</artifactId>
     <version>1.1-SNAPSHOT</version>
-
-    <!-- Ensure packaging is set to war -->
     <packaging>war</packaging>
 
     <build>
@@ -44,7 +43,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Optional JSP dependency -->
+        <!-- JSP support -->
         <dependency>
             <groupId>jakarta.servlet.jsp</groupId>
             <artifactId>jakarta.servlet.jsp-api</artifactId>
@@ -53,9 +52,7 @@
         </dependency>
     </dependencies>
 
-         </dependencies>
-</project>
- <distributionManagement>
+    <distributionManagement>
         <repository>
             <id>libs-release-local</id>
             <url>http://192.168.91.146:8081/artifactory/libs-release-local</url>
