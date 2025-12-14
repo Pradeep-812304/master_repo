@@ -29,10 +29,12 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+           stage('Deploy to Artifactory') {
             steps {
-                sh 'echo "Deploying application..."'
-                sh 'mvn deploy'
+                configFileProvider([configFile(fileID: "aedd10e5-3c10-44df-808f-4f6ae7217819", variable: 'MAVEN_SETTINGS')]) {
+                    sh 'mvn deploy -s $MAVEN_SETTINGS'
+                }
+                
             }
         }
 
