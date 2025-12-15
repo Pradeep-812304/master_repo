@@ -2,5 +2,5 @@
 
 reusablePipeline(
     'https://github.com/Pradeep-812304/master_repo.git',
-    pipeline_pass
+    'pipeline_pass'
 )
