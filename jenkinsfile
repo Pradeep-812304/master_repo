@@ -1,1 +1,6 @@
+@Library('shared_library') _
 
+reusablePipeline(
+    'https://github.com/Pradeep-812304/master_repo.git',
+    pipeline_pass
+)
